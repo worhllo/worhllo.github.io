@@ -28,7 +28,7 @@ jobs:
           uses: peaceiris/actions-gh-pages@v4
           with:
               PERSONAL_TOKEN: ${{ secrets.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 }}
-              EXTERNAL_REPOSITORY: worhllo/WebStack-assets-  
+              EXTERNAL_REPOSITORY: worhllo/WebStack-assets- 
               PUBLISH_BRANCH: main
               PUBLISH_DIR: ./public
               commit_message: auto deploy
