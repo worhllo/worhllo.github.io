@@ -1,34 +1,55 @@
-name: deploy
+name: Hugo Actions  # 名字自取
 
-# 代码提交到main分支时触发github action
 on:
   push:
     branches:
-      - main
+      - main  # 这里的意思是当 main 分支发生 push 的时候，运行下面的 jobs
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+  deploy: 
+    runs-on: ubuntu-20.04	        # 在什么环境运行任务
     steps:
-        - name: Checkout
-          uses: actions/checkout@v4
-          with:
-              fetch-depth: 0
+      - uses: actions/checkout@v4       # 引用actions/checkout这个action，与所在的github仓库同名
+        with:
+         submodules: recursive          # Fetch Hugo themes (true OR recursive) 获取submodule主题
+         fetch-depth: 0                 # Fetch all history for .GitInfo and .Lastmod
+         
+      - name: Pull & update submodules recursively
+        run: |
+          git submodule update --init --recursive
+          git submodule update --recursive --remote
+      - name: Commit
+        run: |
+          git config user.email "3292722614@qq.com"
+          git config user.name "worhllo"
+          git add --all
+          git commit -m "Update submodules" || echo "No changes to commit"
+          git push
 
-        - name: Setup Hugo
-          uses: peaceiris/actions-hugo@v3
-          with:
-              hugo-version: "latest"
-              extended: true
+      - name: Setup Hugo	        # 步骤名自取
+        uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
+        with:
+          hugo-version: 'latest'	# 获取指定版本的hugo
 
-        - name: Build Web
-          run: hugo -D
+      - name: Build 
+        run: hugo -D	# 使用 hugo 构建静态网页
+       
 
-        - name: Deploy Web
-          uses: peaceiris/actions-gh-pages@v4
-          with:
-              PERSONAL_TOKEN: ${{ secrets.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 }}
-              EXTERNAL_REPOSITORY: worhllo/WebStack-assets- 
-              PUBLISH_BRANCH: main
-              PUBLISH_DIR: ./public
-              commit_message: auto deploy
+      - name: Deploy To WebStack-dev                       # 部署至当前仓库的其他分支
+        uses: peaceiris/actions-gh-pages@v3             # 一个自动发布github pages的action
+        with:
+          external_repository: worhllo/WebStack-dev 	# 发布到哪个repo
+          #1. 创建 Personal_Access_Token：
+          #   GitHub 个人账号 -> Settings -> Developer settings -> Personal access tokens ->  Tokens (classic) -> New personal access token (classic)
+          #   - Expiration: No expiration
+          #   - Select scopes: 全选
+          #2. 粘贴 Personal_Access_Token：
+          #   进入目标 repo -> Settings -> Security -> Secrets and variables -> Actions，选择 New repository secret -> 粘贴前面生成的 personal_access_token	
+          personal_token: ${{ secrets.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 }}	  
+          #注意这里指的是 Pages 要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置；因为 hugo 默认生成静态网页到 public 文件夹，所以这里发布 public 文件夹里的内容。
+          publish_dir: ./public
+          #发布到哪个branch
+          publish_branch: gh-pages
+          force_orphan: true
+          cname: 
+          full_commit_message: ${{ github.event.head_commit.message }}
