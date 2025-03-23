@@ -18,7 +18,6 @@
     "showPostSource":0,
     "needComment":0,
     "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
-    "script":"<script src='https://worhllo.github.io/blogtest/plugins/ArticleTOC.js'></script><script src='https://worhllo.github.io/blogtest/plugins/lightbox.js'>，
-    "allHead":"<script src='https://worhllo.github.io/blogtest/plugins/RonanTheme.js'>
+    "script":"<script src='https://worhllo.github.io/blogtest/plugins/ArticleTOC.js'></script><script src='https://worhllo.github.io/blogtest/plugins/lightbox.js'>
 
 }
