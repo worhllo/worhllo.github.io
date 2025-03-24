@@ -1,5 +1,97 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>留心笔记</title><link>https://worhllo.github.io/blog</link><description>燕过留痕，风过留声</description><copyright>留心笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://worhllo.github.io/blog/avatar.webp</url><title>avatar</title><link>https://worhllo.github.io/blog</link></image><lastBuildDate>Mon, 24 Mar 2025 13:01:51 +0000</lastBuildDate><managingEditor>留心笔记</managingEditor><ttl>60</ttl><webMaster>留心笔记</webMaster><item><title>stack主题美化大杂烩</title><link>https://worhllo.github.io/blog/post/11.html</link><description>## 前言
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>留心笔记</title><link>https://worhllo.github.io/blog</link><description>燕过留痕，风过留声</description><copyright>留心笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://worhllo.github.io/blog/avatar.webp</url><title>avatar</title><link>https://worhllo.github.io/blog</link></image><lastBuildDate>Mon, 24 Mar 2025 13:05:28 +0000</lastBuildDate><managingEditor>留心笔记</managingEditor><ttl>60</ttl><webMaster>留心笔记</webMaster><item><title>Markdown语法</title><link>https://worhllo.github.io/blog/post/12.html</link><description># Markdown语法介绍
+
+## 一、标题
+
+### 三号
+
+#### 四号
+
+##### 五号标题
+
+###### 六号标题【最低】
+
+## 二、分割线
+
+    *号分割线
+
+***
+
+    -分割线
+
+***
+
+## 三、粗体斜体
+
+*斜体*
+
+**粗体**
+
+~~删除线~~
+
+## 四、超链接和图片
+
+[超链接,方法1](https://www.baidu.com)
+
+[超链接,方法2](https://www.baidu.com)
+
+![图片显示的文字](https://img2.artron.net/artist/A0261635/brt026163505145.jpg)
+
+## 五、无序列表
+
+*   a
+    *   b
+    *   b
+        *   C
+            *   V
+*   B
+
+## 六、有序列表
+
+1.  a
+2.  b
+    1.  c
+    2.  c
+
+## 七、文字引用
+
+    使用 &gt; 表示，可以有多个 &gt; 表示层级更深
+
+&gt; 第一层
+&gt;
+&gt; &gt; 第二层
+&gt; &gt; 这样跳不下去
+&gt; &gt;
+&gt; &gt; &gt; 还可更深
+
+&gt; 这样就跳出去了
+
+## 八、行内代码
+
+其实上边已经用过很多次，即使用 \` 表示
+
+`这是行内代码
+中间可以换行`
+
+## 九、代码块
+
+````python
+​```代码段```
+import os
+````
+
+## 十、表格
+
+| 商品name | price | num |
+| :----- | ----: | --- |
+| 靠左     |    靠右 | 3   |
+| 3      |     4 | 2   |
+
+## 十一、流程图
+
+&gt; 解释一下这个例子：
+&gt;
+&gt; &gt; *   `mermaid`是Mermaid语言的标记。</description><guid isPermaLink="true">https://worhllo.github.io/blog/post/12.html</guid><pubDate>Mon, 24 Mar 2025 13:05:01 +0000</pubDate></item><item><title>stack主题美化大杂烩</title><link>https://worhllo.github.io/blog/post/11.html</link><description>## 前言
 &gt; **Hugo Stack** 是一款专为博主设计的卡片风格的 Hugo 主题。</description><guid isPermaLink="true">https://worhllo.github.io/blog/post/11.html</guid><pubDate>Mon, 24 Mar 2025 13:01:23 +0000</pubDate></item><item><title>Win+R自动化应用</title><link>https://worhllo.github.io/blog/post/10.html</link><description>#  什么是Win+R，有何优点
 
 &gt; - 防止有些小白看不懂，所以说明一些，使用Windows+R快捷键就可以打开如下图的运行窗口，在里面输入命令可以方便快捷地打开很多东西，而且本文的所有操a作都是在这个运行框里输入的，不要与cmd弄混了。</description><guid isPermaLink="true">https://worhllo.github.io/blog/post/10.html</guid><pubDate>Mon, 24 Mar 2025 12:43:32 +0000</pubDate></item><item><title>免费搭建无限空间＆支持身份认证的私人图床</title><link>https://worhllo.github.io/blog/post/9.html</link><description># 初步介绍
