@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //主页主题------------------------------------------------------------------------------
     
-    if (currentUrl.includes('/blogtest/') || currentUrl.includes('/index.html') || currentUrl.includes('/page')) {
+    if (currentUrl.includes('/blog/') || currentUrl.includes('/index.html') || currentUrl.includes('/page')) {
         console.log('应用主页主题');
         let style = document.createElement("style");
         style.innerHTML = `
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         html {    
-            background: url('https://worhllo.github.io/blogtest/background.webp') no-repeat center center fixed;
+            background: url('https://worhllo.github.io/blog/background.webp') no-repeat center center fixed;
             background-size: cover;
         }
 
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
 
         html {    
-            background: url('https://worhllo.github.io/blogtest/background.webp') no-repeat center center fixed;
+            background: url('https://worhllo.github.io/blog/background.webp') no-repeat center center fixed;
             background-size: cover;
         }
 
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
         
         html {    
-            background: url('https://worhllo.github.io/blogtest/background.webp') no-repeat center center fixed;
+            background: url('https://worhllo.github.io/blog/background.webp') no-repeat center center fixed;
             background-size: cover;
         }
 
