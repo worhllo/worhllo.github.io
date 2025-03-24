@@ -15,7 +15,7 @@
     "nightTheme":"github-light",
     "urlMode":"issue",
     "showPostSource":0,
-    "needComment":0,
+    "needComment":1,
     "primerCSS":"<link href='https://worhllo.github.io/blog/primer.css' rel='stylesheet' />",
     "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
     "script":"<script src='https://worhllo.github.io/blog/plugins/ArticleTOC.js'></script><script src='https://worhllo.github.io/blog/plugins/lightbox.js'></script>",
