@@ -70,4 +70,4 @@ start explorer.exe "https://yandex.com/search/?text=%1+%2+%3+%4+%5+%6+%7+%8+%9"
 ![wrewfwe.png](https://imgbed.worhllo.us.kg/file/1731403097330_wrewfwe.png)
 ## **5.本文出处**
 [私认Windows最强效率神器：WIN+R的独家使用心得！（全网最全）](https://mp.weixin.qq.com/s/Bk6iyYo0i5hBtUVqy5eXkQ)
-<!-- ##{"timestamp":1731340800}## -->
+{"timestamp":1731340800}
