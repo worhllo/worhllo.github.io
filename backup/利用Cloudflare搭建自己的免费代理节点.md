@@ -26,7 +26,7 @@
 
 如果是新注册账户，在后台中有个开发引导，点击`在我们的开发平台构建开始构建`，如果不是新账户则直接点击左侧的`works和pages导航栏`。  ![3.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911208129_3.jpg)接着选择`构建应用程序workers和pages(Creat)`![4.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911278879_4.jpg)跳转页面后点击`切换到pages选项卡`。可以看到，有两种途径可以部署pages,一个是使用git仓库（github或者gitlab），另外一个是直接上传文件。使用git仓库最为简单，当我们修改文件时候不需要一次次地重复上传，但是考虑可能有的朋友没有github账户，这里使用上传文件的方式来演示。##### 下载文件
 
-在github上面有很多使用cloudflare实现代理的仓库，你可以根据你自己的喜好选择，但是部署方式都是大同小异。这里我使用[edgetunnel](https://github.com/cmliu/edgetunnel)，因为使用文件上传方式进行部署，所以首先[下载文件](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip) ，下载的文件名是`edgetunnel-main.zip`。![5](https://imgbed.worhllo.us.kg/file/1731911367839_5.jpg "5")
+在github上面有很多使用cloudflare实现代理的仓库，你可以根据你自己的喜好选择，但是部署方式都是大同小异。这里我使用[edgetunnel](https://github.com/cmliu/edgetunnel)，因为使用文件上传方式进行部署，所以首先[下载文件](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip) ，下载的文件名是`edgetunnel-main.zip`。![5](https://cloudflare-imgbed-9xb.pages.dev/file/1731911367839_5.jpg "5")
 
 #### 3.创建pages项目
 
