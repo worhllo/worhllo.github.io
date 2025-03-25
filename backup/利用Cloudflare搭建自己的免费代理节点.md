@@ -1,4 +1,4 @@
-## 一、前言
+## 1. 前言
 
 > 1. **代理（Proxy**） 是一种充当客户端和目标服务器之间中介的服务器或服务。当你发送网络请求时，代理服务器会代表你向目标服务器请求数据，并将响应转发给你的设备。代理服务器充当了一个**中转站，处理你的请求并将数据传递给你，同时隐藏了你的真实IP地址。
 > 
@@ -14,81 +14,82 @@
 > 
 > 7. **Cloudflare** 是一家全球性的云平台，提供广泛的网络服务，旨在提升各类企业的安全性和性能。具有VPN以下几大优点：加速网站速度；增强网站安全性：提高网站可用性；优化搜索引擎排名等，最重要的是，Cloudflare 提供了许多免费服务，因此，我们就能通Cloudflate搭建属于自己的免费代理节点，不用我们自己的服务器，甚至使用的可以是免费的域名，零成本完全免费。好，话不多说，正式开始.
 
-## 二、具体部署方法
+## 2. 具体部署方法
 
-#### 1.注册cloudflare账户
+#### 2.1 注册cloudflare账户
 
 打开[cloudflare](https://www.cloudflare.com/) 中文官网，点击注册。完成人机验证后点击注册。操作无误的话会直接进入cloudflare后台,会提示你先输入一个域名，没有域名的话可以暂时忽略。同样可以在右上角切换语言。![1.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911084204_1.jpg)此时你的邮箱会受到一封验证邮件，点击邮件的链接地址进行验证，验证完成后重新登录到后台。 ![2.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911151014_2.jpg)
 
-#### 2.创建pages项目的前提准备
+#### 2.2 创建pages项目的前提准备
 
-- ##### 构建应用程序
+- ##### 2.2.1 构建应用程序
 
-如果是新注册账户，在后台中有个开发引导，点击`在我们的开发平台构建开始构建`，如果不是新账户则直接点击左侧的`works和pages导航栏`。  ![3.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911208129_3.jpg)接着选择`构建应用程序workers和pages(Creat)`![4.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911278879_4.jpg)跳转页面后点击`切换到pages选项卡`。可以看到，有两种途径可以部署pages,一个是使用git仓库（github或者gitlab），另外一个是直接上传文件。使用git仓库最为简单，当我们修改文件时候不需要一次次地重复上传，但是考虑可能有的朋友没有github账户，这里使用上传文件的方式来演示。##### 下载文件
+如果是新注册账户，在后台中有个开发引导，点击`在我们的开发平台构建开始构建`，如果不是新账户则直接点击左侧的`works和pages导航栏`。  ![3.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911208129_3.jpg)接着选择`构建应用程序workers和pages(Creat)`![4.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911278879_4.jpg)跳转页面后点击`切换到pages选项卡`。可以看到，有两种途径可以部署pages,一个是使用git仓库（github或者gitlab），另外一个是直接上传文件。使用git仓库最为简单，当我们修改文件时候不需要一次次地重复上传，但是考虑可能有的朋友没有github账户，这里使用上传文件的方式来演示。
+- ##### 2.2.2 下载文件
 
 在github上面有很多使用cloudflare实现代理的仓库，你可以根据你自己的喜好选择，但是部署方式都是大同小异。这里我使用[edgetunnel](https://github.com/cmliu/edgetunnel)，因为使用文件上传方式进行部署，所以首先[下载文件](https://github.com/cmliu/edgetunnel/archive/refs/heads/main.zip) ，下载的文件名是`edgetunnel-main.zip`。![5](https://cloudflare-imgbed-9xb.pages.dev/file/1731911367839_5.jpg "5")
 
-#### 3.创建pages项目
+#### 2.3 创建pages项目
 
-- ##### 创建项目名称
+- ##### 2.3.1 创建项目名称
 
 添加你的项目名称，名称任意。
 
 ![7](https://cloudflare-imgbed-9xb.pages.dev/file/1731912225850_7.jpg).jpg)
 
-- ##### 上传文件
+- ##### 2.3.2 上传文件
 
 选择刚才下载好的`edgetunnel-main.zip` 压缩包上传
 
 ![6](https://cloudflare-imgbed-9xb.pages.dev/file/1731911636053_8.jpg)
 
-- ##### 部署站点
+- ##### 2.3.3 部署站点
 
 上传完成后选择`部署站点`
 
 ![9](https://cloudflare-imgbed-9xb.pages.dev/file/1731911680932_9.jpg)
 
-- ##### 生成UUID
+- ##### 2.3.4 生成UUID
 
 提示部署成功后，还需要添加一下环境变量，点击右下角的`继续处理项目`，我们还需要添加一个环境变量，即UUID。在设置选项中，选择`添加变量`，添加一个名称为`UUID`的变量，UUID/GGID可以在[该网址 Online UUID Generator]([https://www.guidgenerator.com/](https://www.guidgenerator.com/))生成。
 
-- ##### 添加UUID变量
+- ##### 2.3.5 添加UUID变量
 
 将生成的UUID添加到环境变量，注意一下变量名称UUID是大写。记得点击保存。
 
 ![10](https://cloudflare-imgbed-9xb.pages.dev/file/1731911709846_10.jpg)
 
-- ##### 重新部署
+- ##### 2.3.6 重新部署
 
 然后回到`部署`选项，选择`创建新部署`或者`创建部署`，再次上传刚才下载的`edgetunnel-main.zip`压缩包，然后点击保存并部署。这样就能达到重新触发部署的目的，如果是使用git仓库的话就不需要重复上传文件了。部署成功如下第二张图：![11](https://cloudflare-imgbed-9xb.pages.dev/file/1731911741815_11.jpg)
 
 ![12](https://cloudflare-imgbed-9xb.pages.dev/file/1731911774454_12.jpg)
 
-##### 4.更换自定义域名（可换可不换）
+- ##### 2.3.7 自定义域名（可换可不换）
 
 进入到你的pages项目的`自定义域`选项，选择`设置自定义域`。设置自定义域名的格式是：{自定义的前缀}.{你的免费域名} 。输入后跳转页面点击`激活`![13](https://cloudflare-imgbed-9xb.pages.dev/file/1731911798885_13%20(2).jpg)
 
 稍等一会查看自定义域选项,如果状态为绿色则证明激活有效，至此自定义域名已经完成。现在就可以使用自定义域名访问你的page项目了。
 
-#### 5.客户端v2rayN设置
+#### 2.4 客户端v2rayN设置
 
-- ##### 获取订阅地址
+- ##### 2.4.1 获取订阅地址
 
 上述必须的步骤完成后，如果你为进行自定义域名，那么回到你的pages项目的`部署`选项,  点击两个链接中的任意一个，就会看到一些json数据。如果你设置了自定义域名，那么使用自定义域名亦可访问。然后在链接地址后面添加`/你的uuid值`，点击回车后，就能看到几串订阅地址，订阅地址选择红框中的任意一个即可。![14](https://cloudflare-imgbed-9xb.pages.dev/file/1731911828008_14.jpg)![15](https://cloudflare-imgbed-9xb.pages.dev/file/1731911867974_15.jpg)
 
-- ##### 下载v2rayN
+- ##### 2.4.2 下载v2rayN
 
 点击跳转即可下载，下载完毕后，点击`添加订阅组`，把刚复制的订阅链接添加到地址中，接着在订阅分组中，选择`更新当前订阅分组`，可以使用`不通过代理方式`。![16](https://cloudflare-imgbed-9xb.pages.dev/file/1731911977252_16.jpg)
 
-- ##### 测试服务器真连接延迟
+- ##### 2.4.3 测试服务器真连接延迟
 
 全选所有节点，右键点击`测试服务器真连接延迟`。选择一个合适的节点设置为活动服务器后，即可测试google，youtube等网站的连接情况。![17](https://cloudflare-imgbed-9xb.pages.dev/file/1731912010201_17.jpg)
 
-- ##### 设置单一节点（非必选）
+- ##### 2.4.4 设置单一节点（非必选）
 
 如果你使用的是v2rayN，使用单一节点，直接复制该内容粘贴到你的面板，即为单一节点 ![18](https://cloudflare-imgbed-9xb.pages.dev/file/1731912036322_18.jpg)
 
-## 三、本文出处
+## 3. 本文出处
 
 [使用Cloudflate搭建自己的免费代理节点 (eimoon.com)](https://blog.eimoon.com/p/%E4%BD%BF%E7%94%A8cloudflate%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86%E8%8A%82%E7%82%B9/#4%E8%AE%BE%E7%BD%AE%E5%8D%95%E4%B8%80%E8%8A%82%E7%82%B9)
 
