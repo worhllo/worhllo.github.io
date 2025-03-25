@@ -12,7 +12,7 @@
 >   8.完全免费，没有任何限制  
 >   9.有利于电脑桌面整洁  
 
-![qwe.png](https://imgbed.worhllo.us.kg/file/1731383831751_qwe.png)
+![qwe.png](https://cloudflare-imgbed-9xb.pages.dev/file/1731383831751_qwe.png)
 
 # # 如何设置
 
@@ -22,7 +22,7 @@
 
 - 将这个文件夹设置到系统环境变量中，搜索栏输入`高级系统设置`来直达设置页面
   
-  ![wqew.png](https://imgbed.worhllo.us.kg/file/1731385222742_wqew.png)
+  ![wqew.png](https://cloudflare-imgbed-9xb.pages.dev/file/1731385222742_wqew.png)
 
 - 找到系统变量中的`Path`变量，点击`编辑`，点击`新建`，然后将之前复制的文件夹路径粘贴进去，至此，最重要的`地基`已经搭建完成，现在可以开始搭建`高楼`了
 
