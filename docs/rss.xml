@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>留心笔记</title><link>https://worhllo.github.io/blog</link><description>燕过留痕，风过留声</description><copyright>留心笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://worhllo.github.io/blog/avatar.webp</url><title>avatar</title><link>https://worhllo.github.io/blog</link></image><lastBuildDate>Tue, 25 Mar 2025 08:00:03 +0000</lastBuildDate><managingEditor>留心笔记</managingEditor><ttl>60</ttl><webMaster>留心笔记</webMaster><item><title>浅谈《驴得水》</title><link>https://worhllo.github.io/blog/post/15.html</link><description># 有感
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>留心笔记</title><link>https://worhllo.github.io/blog</link><description>燕过留痕，风过留声</description><copyright>留心笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://worhllo.github.io/blog/avatar.webp</url><title>avatar</title><link>https://worhllo.github.io/blog</link></image><lastBuildDate>Tue, 25 Mar 2025 09:24:20 +0000</lastBuildDate><managingEditor>留心笔记</managingEditor><ttl>60</ttl><webMaster>留心笔记</webMaster><item><title>浅谈《驴得水》</title><link>https://worhllo.github.io/blog/post/15.html</link><description># 有感
 ![dsgfds.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1732362718234_dsgfds.jpg)
 &gt; ## “给你讲个笑话，你可别哭啊！”
 &gt; 民国时期，在一个远离喧嚣和战乱的偏远山区，伫立着一所简陋平凡的学校。</description><guid isPermaLink="true">https://worhllo.github.io/blog/post/15.html</guid><pubDate>Mon, 24 Mar 2025 13:09:15 +0000</pubDate></item><item><title>hugo＆ Gmeek博客美化参考教程</title><link>https://worhllo.github.io/blog/post/14.html</link><description>## hugo 博客美化参考教程
@@ -214,7 +214,7 @@ import os
 &gt; - [项目仓库（点击跳转）](https://sanyue.site/)
 
 # 界面一览
-![111.jpg](https://imgbed.worhllo.us.kg/file/1731411605668_111.jpg)
+![111.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731411605668_111.jpg)
 
 # 正式实操
 
@@ -227,13 +227,13 @@ import os
 
 登陆telegram ，在搜索框中搜索 `@BotFather.bat `（**注意甄别，千万别点错了**）
 
-![dsads.jpg](https://imgbed.worhllo.us.kg/file/1731412120575_dsads.jpg)
+![dsads.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731412120575_dsads.jpg)
 
 
 
 打开对话界面，点击 `开始`然后按图示进行配置，得到TOKEN后复制保存备用
 
-![gsdfgsd.jpg](https://imgbed.worhllo.us.kg/file/1731412230292_gsdfgsd.jpg)
+![gsdfgsd.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731412230292_gsdfgsd.jpg)
 
 ### ２．获取 TG_CHAT_ID（频道 ID）
 
