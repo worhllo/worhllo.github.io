@@ -35,7 +35,7 @@
 > - 可以直接根据需求：如可以把`QQ音乐`直接命名为`听歌`、
 > `Steam`命名为`游戏`等
 
-![adsfd.png](https://imgbed.worhllo.us.kg/file/1731386051197_adsfd.png)
+![adsfd.png](https://cloudflare-imgbed-9xb.pages.dev/file/1731386051197_adsfd.png)
 
 ## **3.快速打开网站**
 先新建一个文本文档，在文档中输入以下内容`https://worhllo.github.io/hugo-dev/`是你想设置的网址链接（**可设置多个网站链接**），请自定义设置。然后把文本文档的后缀名从`txt`改为`.bat`,文件名自定义设置，接着把这个`.bat`文件放到你的快速启动文件夹中，然后只需要`WIN+R`唤起运行窗口，再输入定义好的名字，就能快速打开网站了。后续如果想对`.bat`文件进行修改，直接右键`.bat`文件，选择编辑即可
@@ -67,7 +67,6 @@ start explorer.exe "https://yandex.com/search/?text=%1+%2+%3+%4+%5+%6+%7+%8+%9"
 
 这里只得解释一下代码中提到的`%1,%2,%3`，它表示传入搜索串中的参数，而这个参数最多你可以传递9个，这个参数可多不可少，（**即搜索串后面只有一个`%1`**)，那在运行窗口时，你就只能输入一个完整的搜索关键词，而如果你的搜索串中传了多个参数，那么在运行窗口中就可以输入多个关键词，不过注意每个关键词之间要有一个空格，同时最多能传入9个关键词。
 
-![wrewfwe.png](https://imgbed.worhllo.us.kg/file/1731403097330_wrewfwe.png)
+![wrewfwe.png](https://cloudflare-imgbed-9xb.pages.dev/file/1731403097330_wrewfwe.png)
 ## **5.本文出处**
 [私认Windows最强效率神器：WIN+R的独家使用心得！（全网最全）](https://mp.weixin.qq.com/s/Bk6iyYo0i5hBtUVqy5eXkQ)
-{"timestamp":1731340800}
