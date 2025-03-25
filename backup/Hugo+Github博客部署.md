@@ -1,17 +1,14 @@
-## 环境准备
-### 下载Hugo
+## 1. 环境准备
+### 1.1 下载Hugo
 
 - 网址：[Hugo官网](https://gohugo.io/)
 
 - Github地址:[gohugoio/hugo](https://github.com/gohugoio/hugo)
 
- ![](https://cloudflare-imgbed-9xb.pages.dev/file/1731302389412_image1.png?from=admin)
-
 - 选择合适的版本下载。
 
 
-
-### 下载git
+### 1.2 下载git
 
 - 点击[Git官网](https://git-scm.com/)
 
@@ -21,9 +18,9 @@
 
 
 
-## 搭建博客
+## 2. 搭建博客
 
-### 创建Blog
+### 2.1 创建Blog
 
 - 解压`hugo_extended_0.134.2_windows-amd64.zip`文件，点击路径栏，文件路径选中变蓝后，输入`cmd`后回车，弹出窗口后输入`hugo new site dev`后再次回车，关闭窗口。若生成一个dev文件夹则操作成功。（**不要急着关闭cmd命令窗口，后面接着要用到**）
 
@@ -43,7 +40,7 @@
 
 
 
-### 下载主题
+### 2.2 下载主题
 
 - 再次进入[**Hugo官网**](https://gohugo.io/)。
 
@@ -65,8 +62,8 @@
 
 
 
-## Github部署
-### 常规部署
+## 3. Github部署
+### 3.1 常规部署
 
 - 前提条件：拥有一个属于自己的github账号，没有请自行注册。
 
@@ -86,7 +83,7 @@ git remote add origin xxx（你的github仓库地址）
 git push -u origin main
 ```
 
-### Github Action自动部署
+### 3.2 Github Action自动部署
 
 > ​       Github Actions是Github上一个类似于持续集成的功能，它允许你在一些节点上（如提交代码，特定时间等）触发一些操作，用到博客上之后，每次只需要在cmd命令行中提交3行简单代码， 就能实现实现自动部署。
 
@@ -170,7 +167,7 @@ git push -u origin main
 ![777.png](https://cloudflare-imgbed-9xb.pages.dev/file/1731308860942_777.png)
 
 
-## 后续新文章写作与上传
+## 4. 后续新文章写作与上传
 
 - 后续撰写新文章的话，只需三步就能实现本地撰写和线上同步
 
