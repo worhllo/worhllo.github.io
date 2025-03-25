@@ -18,7 +18,7 @@
 
 #### 1.注册cloudflare账户
 
-打开[cloudflare](https://www.cloudflare.com/) 中文官网，点击注册。完成人机验证后点击注册。操作无误的话会直接进入cloudflare后台,会提示你先输入一个域名，没有域名的话可以暂时忽略。同样可以在右上角切换语言。![1.jpg](https://imgbed.worhllo.us.kg/file/1731911084204_1.jpg)此时你的邮箱会受到一封验证邮件，点击邮件的链接地址进行验证，验证完成后重新登录到后台。 ![2.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911151014_2.jpg)
+打开[cloudflare](https://www.cloudflare.com/) 中文官网，点击注册。完成人机验证后点击注册。操作无误的话会直接进入cloudflare后台,会提示你先输入一个域名，没有域名的话可以暂时忽略。同样可以在右上角切换语言。![1.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911084204_1.jpg)此时你的邮箱会受到一封验证邮件，点击邮件的链接地址进行验证，验证完成后重新登录到后台。 ![2.jpg](https://cloudflare-imgbed-9xb.pages.dev/file/1731911151014_2.jpg)
 
 #### 2.创建pages项目的前提准备
 
