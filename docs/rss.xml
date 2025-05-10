@@ -1,18 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>留心笔记</title><link>https://worhllo.github.io/blog</link><description>燕过留痕，风过留声</description><copyright>留心笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://worhllo.github.io/blog/avatar.webp</url><title>avatar</title><link>https://worhllo.github.io/blog</link></image><lastBuildDate>Sat, 10 May 2025 16:20:28 +0000</lastBuildDate><managingEditor>留心笔记</managingEditor><ttl>60</ttl><webMaster>留心笔记</webMaster><item><title>自制本地单机的定制化导航页面</title><link>https://worhllo.github.io/blog/post/17.html</link><description>## 自制本地单机的定制化导航页面
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>留心笔记</title><link>https://worhllo.github.io/blog</link><description>燕过留痕，风过留声</description><copyright>留心笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://worhllo.github.io/blog/avatar.webp</url><title>avatar</title><link>https://worhllo.github.io/blog</link></image><lastBuildDate>Sat, 10 May 2025 16:31:29 +0000</lastBuildDate><managingEditor>留心笔记</managingEditor><ttl>60</ttl><webMaster>留心笔记</webMaster><item><title>自制本地单机的定制化导航页面</title><link>https://worhllo.github.io/blog/post/17.html</link><description>## 自制本地单机的定制化导航页面
 
-**### 一、前言**
+### **一、前言**
 
 在浏览网页时，如果我们想要收藏该网址或者页面，可以直接使用浏览器或者其他搜索引擎的收藏的收藏功能，但是一旦随着收藏的网址逐渐增多，浏览器自带的收藏功能或者其他搜索引擎的收藏就显得捉襟见肘
 
 * 收藏数量增多后无法快速定位并点击想要查阅的收藏网址
 * 个人认为浏览器自带的收藏夹美观性有待提高
-* 添加链接的时候，不是提示链接无效，就是提示超出标签数量，无法继续添加；
+* 添加链接的时候，不是提示链接无效，就是提示超出标签数量，无法继续添加
+* 隐私安全没办法百分百保证
 
 因此，经过一番探索，功夫不负有心人，我终于找到了@jijiucheng大佬在Github上上传的本地单机的定制化导航---[苜蓿导航](https://github.com/jijiucheng/JJC_Navigation)！
 ![Sunny_20250511_001729.png](https://cloudflare-imgbed-9xb.pages.dev/file/1746893945247_Sunny_20250511_001729.png)
 
-**### 二、使用方式：**
+### **二、使用方式**
 
 #### 2.1 方法1
 
@@ -20,18 +21,9 @@
 2. 将根目录下的 html 文件通过浏览器打开，在浏览器的地址栏会获取到绝对地址；
 3. 可以将这个地址保存到浏览器的标签栏，亦或者可以给浏览器设置默认打开页面也行，这样的话，以后浏览器每次启动都可以快捷到进入到该导航页面
    
-&gt; 数据的增删改：
-&gt; 
-&gt; 在 navigation.js 文件中的顶部有一个 list 的属性，展开后就是当下的所有导航数据；可以参考当下的数据结构，自定义添加和删除、更改；
-&gt; * 导航名称在 navigation.html 文件中更改；
-&gt; 
-&gt; * selectSubIndex：代表默认打开的时候二级导航页面的选中；
-&gt; 
-&gt; * 如果想调整整个页面显示的宽度，在 navigation.css 中的 .container 中调整 width 即可；
-&gt; 
-&gt; * 如果想调整单行链接个数，在 navigation.css 中的 .link-item 中调整 width 即可；
-&gt; 
-&gt; * 如果想添加占位空链接，只需要将对应数据结构中的所有值全部清空，但仍保留空数据结构即可。</description><guid isPermaLink="true">https://worhllo.github.io/blog/post/17.html</guid><pubDate>Sat, 10 May 2025 16:20:04 +0000</pubDate></item><item><title>【Word 添加页码（首页不显示）】操作教程</title><link>https://worhllo.github.io/blog/post/16.html</link><description>## 【Word 添加页码（首页不显示）】操作教程
+
+#### 2.2 方法2
+如果大家不想下载管理过多的文件，亦或者担心文件可能会丢失，那就只下载 global-navigation.html 文件即可；其数据的增删改和上面提到的基本上差不多。</description><guid isPermaLink="true">https://worhllo.github.io/blog/post/17.html</guid><pubDate>Sat, 10 May 2025 16:20:04 +0000</pubDate></item><item><title>【Word 添加页码（首页不显示）】操作教程</title><link>https://worhllo.github.io/blog/post/16.html</link><description>## 【Word 添加页码（首页不显示）】操作教程
 
 
 1. 首先，打开文档，点击顶部菜单栏的【插入】选项卡，在 “页眉和页脚” 功能区找到【页码】按钮（图标是一个小书本加数字）。</description><guid isPermaLink="true">https://worhllo.github.io/blog/post/16.html</guid><pubDate>Sat, 10 May 2025 14:21:24 +0000</pubDate></item><item><title>浅谈《驴得水》</title><link>https://worhllo.github.io/blog/post/15.html</link><description># 有感
