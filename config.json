@@ -1,10 +1,10 @@
 {
     "title":"留心笔记",
     "subTitle":"雁过留声，风过留痕，物犹如此，人何以堪！",
-    "avatarUrl":"https://worhllo.github.io/blog/avatar.webp",
+    "avatarUrl":"https://worhllo.github.io/avatar.webp",
     "GMEEK_VERSION":"last",
     "displayTitle":"WatchYourBack",
-    "homeUrl":"https://worhllo.github.io/blog",
+    "homeUrl":"http://blog.142588.xyz",
     "onePageListNum":15,
     "i18n":"CN",
     "singlePage":["link","about"],
@@ -16,8 +16,8 @@
     "urlMode":"issue",
     "showPostSource":0,
     "needComment":1,
-    "primerCSS":"<link href='https://worhllo.github.io/blog/primer.css' rel='stylesheet' />",
+    "primerCSS":"<link href='https://worhllo.github.io/primer.css' rel='stylesheet' />",
     "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
-    "script":"<script src='https://worhllo.github.io/blog/plugins/ArticleTOC.js'></script><script src='https://worhllo.github.io/blog/plugins/lightbox.js'></script>",
-    "allHead":"<script src='https://worhllo.github.io/blog/plugins/RonanTheme.js'></script>"
+    "script":"<script src='https://worhllo.github.io/plugins/ArticleTOC.js'></script><script src='https://worhllo.github.io/plugins/lightbox.js'></script>",
+    "allHead":"<script src='https://worhllo.github.io/plugins/RonanTheme.js'></script>"
 }
