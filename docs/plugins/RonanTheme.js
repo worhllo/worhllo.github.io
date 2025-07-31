@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         html {    
-            background: url('https://worhllo.github.io/blog/background.webp') no-repeat center center fixed;
+            background: url('https://note.142588.xyz/background.webp') no-repeat center center fixed;
             background-size: cover;
         }
 
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
 
         html {    
-            background: url('https://worhllo.github.io/blog/background.webp') no-repeat center center fixed;
+            background: url('https://note.142588.xyz/background.webp') no-repeat center center fixed;
             background-size: cover;
         }
 
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
         
         html {    
-            background: url('https://worhllo.github.io/blog/background.webp') no-repeat center center fixed;
+            background: url('https://note.142588.xyz/background.webp') no-repeat center center fixed;
             background-size: cover;
         }
 
