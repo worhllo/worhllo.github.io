@@ -79,6 +79,24 @@ document.addEventListener('DOMContentLoaded', function() {
             border-color: rebeccapurple;
         }
 
+        /* 赞助商信息样式 */
+        .sponsor-info {
+            text-align: center;
+            margin-top: 20px;
+            font-size: small;
+            color: #666;
+        }
+        `;
+        document.head.appendChild(style);
+
+        // 添加赞助商信息到页脚
+        let footer = document.getElementById('footer');
+        let sponsorInfo = document.createElement('div');
+        sponsorInfo.className = 'sponsor-info';
+        sponsorInfo.innerHTML = '本站由 <a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://gcore.jsdelivr.net/gh/YukiNoUta/cdn-static@main/blog/svg/upyun.svg" width="45" height="13" style="fill: currentColor;"></a> 提供 CDN 加速/云存储服务';
+        footer.insertBefore(sponsorInfo, footer.firstChild);
+    }
+
 
     //文章页主题------------------------------------------------------------------------------
     
@@ -133,24 +151,30 @@ document.addEventListener('DOMContentLoaded', function() {
             background-color: #c9daf8;
         }
         
-     /* 标题橙色包裹 */
-.markdown-body h1{
-    display: inline-block;
-    font-size: 1.3rem;
-    font-weight: bold;
-    background: rgb(239, 112, 96);
-    color: #ffffff;
-    padding: 3px 10px 1px;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin-right: 2px;
-    margin-top: 1.8rem; 
-}   
-`;
-document.head.appendChild(style);
-}
+        /* 标题橙色包裹 */
+        .markdown-body h1{
+            display: inline-block;
+            font-size: 1.3rem;
+            font-weight: bold;
+            background: rgb(239, 112, 96);
+            color: #ffffff;
+            padding: 3px 10px 1px;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            margin-right: 2px;
+            margin-top: 1.8rem; 
+        }   
+        `;
+        document.head.appendChild(style);
+        // 添加赞助商信息到页脚
+        let footer = document.getElementById('footer');
+        let sponsorInfo = document.createElement('div');
+        sponsorInfo.className = 'sponsor-info';
+        sponsorInfo.innerHTML = '本站由 <a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://gcore.jsdelivr.net/gh/YukiNoUta/cdn-static@main/blog/svg/upyun.svg" width="45" height="13" style="fill: currentColor;"></a> 提供 CDN 加速/云存储服务';
+        footer.insertBefore(sponsorInfo, footer.firstChild);
+    } 
 
 
     // 搜索页主题--------------------------------------------------------------------
@@ -215,6 +239,12 @@ document.head.appendChild(style);
         }
         `;
         document.head.appendChild(style);
+        // 添加赞助商信息到页脚
+        let footer = document.getElementById('footer');
+        let sponsorInfo = document.createElement('div');
+        sponsorInfo.className = 'sponsor-info';
+        sponsorInfo.innerHTML = '本站由 <a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://gcore.jsdelivr.net/gh/YukiNoUta/cdn-static@main/blog/svg/upyun.svg" width="45" height="13" style="fill: currentColor;"></a> 提供 CDN 加速/云存储服务';
+        footer.insertBefore(sponsorInfo, footer.firstChild);
     
         // 搜索框回车触发
         let input = document.getElementsByClassName("form-control subnav-search-input float-left")[0];
