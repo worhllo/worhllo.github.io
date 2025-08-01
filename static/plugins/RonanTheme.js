@@ -1,69 +1,47 @@
 document.addEventListener('DOMContentLoaded', function() {    
-    // 获取完整的URL信息
-    const currentPath = window.location.pathname;
-    const currentHost = window.location.hostname;
-    const currentUrl = window.location.href;
+    let currentUrl = window.location.pathname;
+    //let currentHost = window.location.hostname;
 
-    // 定义目标域名和需要匹配的路径
-    const targetDomain = 'note.142588.xyz';
-    const isTargetDomain = currentHost === targetDomain || currentHost === `www.${targetDomain}`;
+    //主页主题------------------------------------------------------------------------------
     
-    // 路径匹配：主页(带或不带斜杠)、index.html页面、包含/page的页面
-    const isHomePage = currentPath === '/' || currentPath === '';
-    const isIndexPage = currentPath.includes('/index.html');
-    const isPagePath = currentPath.includes('/page');
-
-    // 综合判断条件
-    if (isTargetDomain && (isHomePage || isIndexPage || isPagePath)) {
-        console.log('应用主页主题 - 条件匹配成功');
+     if (currentUrl.includes('note') || currentUrl.includes('/index.html') || currentUrl.includes('/page')) {
+        console.log('应用主页主题');
         let style = document.createElement("style");
         style.innerHTML = `
         .blogTitle {
-            display: unset !important;
+            display: unset;
         }
 
         #header {
-            height: 300px !important;
+            height: 300px;
         }
 
         #header h1 {
-            position: absolute !important;
-            left: 50% !important;
-            transform: translateX(-50%) !important;
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .avatar {
-            width: 200px !important;
-            height: 200px !important;
+            width: 200px;
+            height: 200px;
         }
 
         #header h1 a {
-            margin-top: 30px !important;
-            font-family: fantasy !important;
-            margin-left: unset !important;
+            margin-top: 30px;
+            font-family: fantasy;
+            margin-left: unset;
         }
 
         html {    
-            background: url('https://note.142588.xyz/background.webp') no-repeat center center fixed !important;
-            background-size: cover !important;
+            background: url('https://blog.freeblock.cn/background.webp') no-repeat center center fixed;
+            background-size: cover;
         }
-        `;
-        // 将样式添加到页面头部
-        document.head.appendChild(style);
-    } else {
-        // 调试信息，帮助排查问题
-        console.log('不应用主页主题 - 条件不匹配');
-        console.log('当前域名:', currentHost);
-        console.log('当前路径:', currentPath);
-        console.log('是否目标域名:', isTargetDomain);
-        console.log('是否主页:', isHomePage);
-    }
-});
 
-
+        
         /* 主体布局 */
         body {
             min-width: 200px;
