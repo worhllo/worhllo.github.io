@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //主页主题------------------------------------------------------------------------------
     
-    if (currentUrl == '/blog/' || currentUrl.includes('/index.html') || currentUrl.includes('/page')) {
+    if (currentUrl == '/' || currentUrl.includes('/index.html') || currentUrl.includes('/page')) {
         console.log('应用主页主题');
         let style = document.createElement("style");
         style.innerHTML = `
@@ -79,24 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
             border-color: rebeccapurple;
         }
 
-        /* 赞助商信息样式 */
-        .sponsor-info {
-            text-align: center;
-            margin-top: 20px;
-            font-size: small;
-            color: #666;
-        }
-        `;
-        document.head.appendChild(style);
-
-        // 添加赞助商信息到页脚
-        let footer = document.getElementById('footer');
-        let sponsorInfo = document.createElement('div');
-        sponsorInfo.className = 'sponsor-info';
-        sponsorInfo.innerHTML = '本站由Cloudflar提供加速服务';
-        footer.insertBefore(sponsorInfo, footer.firstChild);
-    }
-
 
     //文章页主题------------------------------------------------------------------------------
     
@@ -151,30 +133,24 @@ document.addEventListener('DOMContentLoaded', function() {
             background-color: #c9daf8;
         }
         
-        /* 标题橙色包裹 */
-        .markdown-body h1{
-            display: inline-block;
-            font-size: 1.3rem;
-            font-weight: bold;
-            background: rgb(239, 112, 96);
-            color: #ffffff;
-            padding: 3px 10px 1px;
-            border-top-right-radius: 8px;
-            border-top-left-radius: 8px;
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-            margin-right: 2px;
-            margin-top: 1.8rem; 
-        }   
-        `;
-        document.head.appendChild(style);
-        // 添加赞助商信息到页脚
-        let footer = document.getElementById('footer');
-        let sponsorInfo = document.createElement('div');
-        sponsorInfo.className = 'sponsor-info';
-        sponsorInfo.innerHTML = '本站由Cloudflar提供加速服务';
-        footer.insertBefore(sponsorInfo, footer.firstChild);
-    } 
+     /* 标题橙色包裹 */
+.markdown-body h1{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: rgb(239, 112, 96);
+    color: #ffffff;
+    padding: 3px 10px 1px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-right: 2px;
+    margin-top: 1.8rem; 
+}   
+`;
+document.head.appendChild(style);
+}
 
 
     // 搜索页主题--------------------------------------------------------------------
@@ -239,12 +215,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         `;
         document.head.appendChild(style);
-        // 添加赞助商信息到页脚
-        let footer = document.getElementById('footer');
-        let sponsorInfo = document.createElement('div');
-        sponsorInfo.className = 'sponsor-info';
-        sponsorInfo.innerHTML = '本站由Cloudflar提供加速服务';
-        footer.insertBefore(sponsorInfo, footer.firstChild);
     
         // 搜索框回车触发
         let input = document.getElementsByClassName("form-control subnav-search-input float-left")[0];
