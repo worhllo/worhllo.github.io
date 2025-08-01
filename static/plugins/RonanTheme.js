@@ -3,9 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     //let currentHost = window.location.hostname;
 
     //主页主题------------------------------------------------------------------------------
-    
-    if (currentUrl == '/' || currentUrl.includes('/index.html') || currentUrl.includes('/page')) {
-        console.log('应用主页主题');
+     /* 主题的判断条件 */
+    if (
+  currentUrl === '/' || 
+  currentUrl.includes('/index.html') || 
+  currentUrl.includes('/page') || 
+  currentUrl === 'https://note.142588.xyz'
+) {
+  console.log('应用主页主题');
+}
         let style = document.createElement("style");
         style.innerHTML = `
         .blogTitle {
