@@ -1,17 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {    
     let currentUrl = window.location.pathname;
-    //let currentHost = window.location.hostname;
+    let currentHost = window.location.hostname;
 
-    //主页主题------------------------------------------------------------------------------
-     /* 主题的判断条件 */
-    if (
-  currentUrl === '/' || 
-  currentUrl.includes('/index.html') || 
-  currentUrl.includes('/page') || 
-  currentUrl === 'https://note.142588.xyz'
-) {
-  console.log('应用主页主题');
-}
+    // 主页主题
+    /* 主题的判断条件：指定域名 + 特定路径 */
+    if (currentHost === 'note.142588.xyz' && 
+        (currentUrl === '/' || currentUrl.includes('/index.html') || currentUrl.includes('/page'))) {
+        console.log('应用主页主题');
+    }
+});
         let style = document.createElement("style");
         style.innerHTML = `
         .blogTitle {
